@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Hubble Fix",
+    "description": "Replaces hubble images with dweb.link source",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": ["https://www.hubble.tools/*"],
+            "js": ["fix-pictures.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
